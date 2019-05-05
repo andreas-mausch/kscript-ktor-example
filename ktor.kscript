@@ -1,0 +1,18 @@
+@file:DependsOn("io.ktor:ktor-server-core:1.1.4")
+@file:DependsOn("io.ktor:ktor-server-netty:1.1.4")
+
+import io.ktor.application.*
+import io.ktor.http.*
+import io.ktor.response.*
+import io.ktor.routing.*
+import io.ktor.server.engine.*
+import io.ktor.server.netty.*
+
+val server = embeddedServer(Netty, port = 8080) {
+    routing {
+        get("/") {
+            call.respondText("Hello World!", ContentType.Text.Plain)
+        }
+    }
+}
+server.start(wait = true)
