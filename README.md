@@ -1,3 +1,5 @@
+Small example to show how to create a simple API using kotlin, kscript and ktor.
+
 - Install [kscript](https://github.com/holgerbrandl/kscript)
 - Run `kscript ./ktor.kscript`
   ```
