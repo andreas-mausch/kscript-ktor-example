@@ -1,7 +1,7 @@
 Small example to show how to create a simple API using kotlin, kscript and ktor.
 
 - Install [kscript](https://github.com/holgerbrandl/kscript)
-- Run `kscript ./ktor.kscript`
+- Run `./ktor.kscript`
   ```
   21:33:37.830 [main] INFO ktor.application - No ktor.deployment.watch patterns specified, automatic reload is not active
   21:33:37.865 [main] INFO ktor.application - Responding at http://0.0.0.0:8080
